@@ -1,0 +1,146 @@
+/* Imagen de fondo para todo el sitio */
+body {
+    background-image: url("img/fondo-grafiti.jpg"); /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Asegura que el texto sea visible sobre el fondo */
+}
+
+.artist-section h4, .artist-section p, .artist-section ul {
+    color: #fff; /* Texto blanco para mayor contraste */
+}
+
+/* Capa oscura */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Ajusta la opacidad según lo necesario */
+    z-index: -1;
+}
+
+.artist-section h4, .artist-section p, .artist-section ul {
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo para texto centrado con capa oscura */
+.text-highlight-center {
+    display: inline-block;  /* Esto hace que el fondo se ajuste solo al texto */
+    background-color: rgba(0, 0, 0, 0.7); /* Capa oscura detrás del texto */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    text-align: center; /* Alineación centrada */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para un efecto flotante */
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad del 80% */
+    color: #ffffff; /* Color blanco para el texto */
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #ffffff; /* Color blanco para los enlaces */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+.footer h6 {
+    color: #e0e0e0; /* Color gris claro para los títulos */
+    margin-bottom: 15px;
+}
+
+.navbar .nav-link {
+    margin: 0 10px; /* Añade espacio a los lados de cada enlace */
+    font-size: 16px; /* Ajusta el tamaño de fuente si es necesario */
+}
+
+.navbar .navbar-brand {
+    margin-right: auto; /* Empuja el título a la izquierda */
+}
+
+.navbar .d-flex {
+    gap: 10px; /* Espacia uniformemente los enlaces del navbar */
+}
+
+.video-title {
+    color: white; /* Asegura visibilidad */
+}
+
+.info-banner {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.info-banner button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-banner button:hover {
+    background-color: #d32f2f;
+}
+
+body.dark-mode {
+    background-image: url('img/darkmode.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Cambiar color de texto para mejor visibilidad en modo oscuro */
+}
+
+body {
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transición suave al cambiar entre modos */
+}
+
+#dark-mode-toggle {
+    background: transparent; /* Fondo transparente para que no opaque el navbar */
+    border: none; /* Sin borde */
+    color: #fff; /* Color blanco para el ícono */
+}
+
+/* Estilos generales para texto claro */
+body, p, h2, h4, a {
+    color: #ffffff; /* Cambia el color del texto a blanco */
+}
+
+/* Asegúrate de que los links sean visibles */
+a {
+    color: #ffcc00; /* Color amarillo claro para los enlaces */
+}
+
+/* Fondo oscuro con opacidad en las secciones */
+.section-dark {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+    padding: 20px;
+    border-radius: 8px;
+}

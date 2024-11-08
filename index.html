@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Museo Virtual de Hip-Hop de los 90s">
+    <meta name="keywords" content="Hip-Hop, Rap, Eazy-E, Ice Cube, 2Pac, Snoop Dogg, N.W.A">
+    <link rel="icon" href="img/rap-icon.jpg" type="image/x-icon">
+    <title>Museo Hip-Hop 90s</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body onload="showAlert()">
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg bg-custom">
+    <div class="container-fluid">
+        <!-- Título a la izquierda -->
+        <a class="navbar-brand" href="#">Museo Hip-Hop 90s</a>
+
+        <!-- Botón de Modo Oscuro con un ícono en el navbar -->
+        <button id="dark-mode-toggle" class="btn btn-light">
+        <i id="mode-icon" class="bi bi-sun"></i> <!-- Ícono para el modo claro -->
+        </button>
+        <!-- Cambiar esta URL por la ruta de tu propia imagen -->
+        <img id="dark-mode-image" src="img/darkmode.jpg" alt="Modo Oscuro" style="display: none;">
+        </div>
+        
+        <!-- Botón de colapso para dispositivos móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Opciones de navegación a la derecha -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="enlaces-interes.html">Enlaces de Interés</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="articles.html">Artículos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Sección Principal -->
+<div class="container my-5">
+    <div class="row">
+        <!-- Información Lateral -->
+        <div class="col-lg-3 col-md-4 d-flex align-items-center">
+            <div class="info-section">
+                <h3>Bienvenido al Museo Hip-Hop 90s</h3>
+                <p>Descubre la historia, los momentos icónicos y las leyendas del hip-hop de los años 90. Un tributo a figuras como Eazy-E, Ice Cube, 2Pac, Snoop Dogg y el grupo N.W.A. Sumérgete en la cultura y el estilo que definieron una era.</p>
+            </div>
+        </div>
+
+        <!-- Carrusel de Imágenes sin Botones -->
+        <div class="col-lg-9 col-md-8">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <!-- Primer ítem (activo por defecto) -->
+                    <div class="carousel-item active">
+                        <h5>Eazy-E</h5>
+                        <p>El padrino del gangsta rap, fundador de N.W.A y un ícono de los 90.</p>
+                        <img src="img/Eazy-E.jpg" class="d-block w-100" alt="Eazy-E">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <!-- Segundo ítem -->
+                    <div class="carousel-item">
+                        <h5>2Pac</h5>
+                        <p>Revolucionó el hip-hop con sus letras y su activismo.</p>
+                        <img src="img/shakurpac.jpeg" class="d-block w-100" alt="2Pac">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <!-- Tercer ítem -->
+                    <div class="carousel-item">
+                            <h5>Snoop Dogg</h5>
+                            <p>Estilo único y una de las voces más reconocibles del rap.</p>
+                        <img src="img/SnuppyDuppy.jpg" class="d-block w-100" alt="Snoop Dogg">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Tarjeta de Eazy-E -->
+        <div class="col-md-4 mb-4">
+            <a href="eazy-e.html" class="flex-video-link">
+                <div class="card flex-video-card">
+                    <img src="img/Eazy.jpg" class="card-img-top" alt="Eazy-E">
+                    <div class="card-body">
+                        <h5 class="card-title">Eazy-E</h5>
+                        <p class="card-text">Considerado uno de los pioneros del gangsta rap</p>
+                    </div>
+                    <video class="card-video" muted loop>
+                        <source src="vid/Eazy-E - Real Muthaphuckkin G's (Music Video) - Creative Hip-Hop (1080p60, h264, youtube).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </a>
+        </div>
+
+        <!-- Tarjeta de 2Pac -->
+        <div class="col-md-4 mb-4">
+            <a href="2pac.html" class="flex-video-link">
+                <div class="card flex-video-card">
+                    <img src="img/2pac.jpg" class="card-img-top" alt="2Pac">
+                    <div class="card-body">
+                        <h5 class="card-title">2Pac</h5>
+                        <p class="card-text">Se convirtió en una de las figuras más influyentes del hip hop.</p>
+                    </div>
+                    <video class="card-video" muted loop>
+                        <source src="vid/2Pac - Hit 'Em Up (Dirty) (Music Video) HD - Seven Hip-Hop (720p, h264, youtube).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </a>
+        </div>
+
+        <!-- Tarjeta de Snoop Dogg -->
+        <div class="col-md-4 mb-4">
+            <a href="snoop-dogg.html" class="flex-video-link">
+                <div class="card flex-video-card">
+                    <img src="img/Snoop-Dogg.jpg" class="card-img-top" alt="Snoop Dogg">
+                    <div class="card-body">
+                        <h5 class="card-title">Snoop Dogg</h5>
+                        <p class="card-text">Conocido por su flow suave y relajado</p>
+                    </div>
+                    <video class="card-video" muted loop>
+                        <source src="vid/Dr Dre - Nuthin' But A G Thang [Official Music Video] - Dr. Dre (480p, h264, youtube).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </a>
+        </div>
+
+        <!-- Tarjeta de Ice Cube -->
+        <div class="col-md-4 mb-4">
+            <a href="ice-cube.html" class="flex-video-link">
+                <div class="card flex-video-card">
+                    <img src="img/Ice-Cube.jpg" class="card-img-top" alt="Ice Cube">
+                    <div class="card-body">
+                        <h5 class="card-title">Ice Cube</h5>
+                        <p class="card-text">Conocido por sus letras inteligentes y su crítica social.</p>
+                    </div>
+                    <video class="card-video" muted loop>
+                        <source src="vid/Ice Cube - You Know How We Do It - IceCubeVEVO (1080p, h264, youtube).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </a>
+        </div>
+        <!-- Tarjeta de N.W.A -->
+        <div class="col-md-4 mb-4">
+            <a href="nwa.html" class="flex-video-link">
+                <div class="card flex-video-card nwa-card">
+                    <img src="img/NWA.jpeg" class="card-img-top" alt="N.W.A">
+                    <div class="card-body">
+                        <h5 class="card-title">N.W.A</h5>
+                        <p class="card-text">Considerado uno de los grupos más influyentes en la historia del hip hop</p>
+                    </div>
+                    <video class="card-video" muted loop>
+                        <source src="vid/N.W.A. - Straight Outta Compton (Official Music Video) - NWAVEVO (720p, h264, youtube).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </a>
+        </div>
+        <!-- Tarjeta de Próximamente -->
+        <div class="col-md-4 mb-4">
+            <div class="card flex-video-card coming-soon" onclick="showComingSoonMessage()">
+                <div class="card-body">
+                    <h5 class="card-title">Próximamente</h5>
+                    <p class="card-text">¡Muy pronto más artistas!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner lateral para el mensaje de "Muy pronto más artistas" -->
+    <div id="coming-soon-banner" class="coming-soon-banner">
+        <p>¡Muy pronto más artistas!</p>
+        <button onclick="hideComingSoonMessage()">Cerrar</button>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Sección de enlaces -->
+            <div class="col-md-4 footer-section">
+                <h6>Enlaces</h6>
+                <ul class="list-unstyled">
+                    <li><a href="politicas-privacidad.html">Políticas de Privacidad</a></li>
+                    <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                </ul>
+                <h6>Otros Artistas</h6>
+                <ul class="list-unstyled">
+                <li><a href="#" class="other-artist" onclick="showBanner('Dr.Dre')">Dr.Dre</a></li>
+                <li><a href="#" class="other-artist" onclick="showBanner('Notorious B.I.G.')">Notorious B.I.G.</a></li>
+                <li><a href="#" class="other-artist" onclick="showBanner('Nas')">Nas</a></li>
+                <li><a href="#" class="other-artist" onclick="showBanner('Lauryn Hill')">Lauryn Hill</a></li>
+            </div>
+
+            <!-- Sección de ubicación -->
+            <div class="col-md-4 footer-section">
+                <h6>Ubicación</h6>
+                <p>Dirección del Museo: 306 W Compton Blvd #104, Compton, CA 90220, Estados Unidos</p>
+                <div class="map-container">
+                    <!-- IFrame de Google Maps (insertar enlace real si tienes) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26498.54884554663!2d-118.24965524800389!3d33.88144748615996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cbc93b108351%3A0x2a7b8e9f511fb07f!2sCompton%20Art%20and%20History%20Museum!5e0!3m2!1ses-419!2sdo!4v1730948896586!5m2!1ses-419!2sdo" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Sección de copyright -->
+            <div class="col-md-4 footer-section">
+                <h6>Derechos de Autor</h6>
+                <p>&copy; 2024 Museo Hip-Hop 90s. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="info-banner" class="info-banner" style="display: none;">
+        <p>Próximamente disponible en nuestro museo</p>
+        <button onclick="closeBanner()">Cerrar</button>
+    </div>    
+</body>
+</html>

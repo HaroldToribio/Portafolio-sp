@@ -1,0 +1,339 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.hero {
+    background: url('path/to/hero-bg.jpg') no-repeat center center/cover;
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.list-group-item:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.artist {
+    transition: transform 0.3s ease;
+}
+.artist:hover {
+    transform: scale(1.1);
+}
+
+/* Fondo gris oscuro personalizado para el navbar */
+.bg-custom {
+    background-color: #3a3a3a;
+    padding: 0.8rem 1rem;
+}
+
+/* Estilos del título del navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+/* Estilos de las opciones de navegación */
+.nav-link {
+    color: #cccccc;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+/* Estilo de la información lateral */
+.info-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h3 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Ajustar tamaño del contenedor del carrusel */
+.carousel-item {
+    max-height: 400px; /* Altura máxima del contenedor del carrusel */
+    overflow: hidden; /* Esconde cualquier contenido desbordado */
+}
+
+/* Asegurarse de que las imágenes se ajusten dentro del contenedor */
+.carousel-item img {
+    width: 100%; /* Imagen ocupa el ancho completo del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener proporciones */
+    object-fit: contain; /* Asegura que la imagen se adapte sin recortarse */
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+}
+
+/* Imagen de fondo para toda la página */
+body {
+    background-image: url('img/fondo-grafiti.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+    background-position: center; /* Centra la imagen de fondo */
+    color: white; /* Cambia el color de texto si la imagen de fondo es oscura */
+}
+
+/* Asegura que el contenido principal se vea bien sobre el fondo */
+.container, .navbar, .footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para mejorar legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para la galería FlexGrid */
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flex-item {
+    position: relative;
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.flex-item:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.flex-item img {
+    width: 100%;
+    height: 250px; /* Tamaño de la imagen */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.artist-info {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para texto */
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.artist-info h5 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.artist-info p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #ccc; /* Color más claro para la descripción */
+}
+
+/* Estilos para el Footer */
+.footer {
+    background-color: #222; /* Color oscuro para el fondo del footer */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+.footer h6 {
+    font-weight: bold;
+    color: #ddd;
+}
+
+.footer .footer-section {
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #fff; /* Cambia a blanco al pasar el cursor */
+}
+
+.footer .map-container iframe {
+    border-radius: 10px;
+    border: none;
+}
+
+/* styles.css */
+.policy-content, .terms-content {
+    color: white;
+}
+
+.info-banner {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.info-banner button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-banner button:hover {
+    background-color: #d32f2f;
+}
+
+body.dark-mode {
+    background-image: url('img/darkmode.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Cambiar color de texto para mejor visibilidad en modo oscuro */
+}
+
+body {
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transición suave al cambiar entre modos */
+}
+
+#dark-mode-toggle {
+    background: transparent; /* Fondo transparente para que no opaque el navbar */
+    border: none; /* Sin borde */
+    color: #fff; /* Color blanco para el ícono */
+}
+
+/* Ajuste de las tarjetas dentro del FlexGrid */
+.flex-video-card {
+    position: relative;
+    width: 100%;
+    max-width: 200px; /* Tamaño máximo para que sean tarjetas pequeñas */
+    height: 250px; /* Ajusta la altura para evitar tarjetas demasiado grandes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Asegura que el video no se salga de los límites */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.flex-video-card:hover .card-video {
+    opacity: 1;
+    visibility: visible;
+}
+
+.flex-video-card img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.flex-video-card:hover img {
+    opacity: 0; /* Oculta la imagen al pasar el mouse */
+}
+
+.card-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+/* Estilos para el texto */
+.card-body {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Elimina subrayado y color de enlace en la tarjeta */
+.flex-video-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos para la tarjeta Próximamente */
+.coming-soon {
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Banner lateral para el mensaje */
+.coming-soon-banner {
+    position: fixed;
+    top: 50%;
+    right: -300px; /* Oculto fuera de la vista */
+    width: 250px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.coming-soon-banner p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.coming-soon-banner button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
